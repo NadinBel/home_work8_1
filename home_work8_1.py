@@ -7,7 +7,7 @@ def add_everything_up(a, b):
         b = b * y * 10 / y / 10
     try:
         return a + b
-    except(TypeError):
+    except TypeError as exc:
         return str(a) + str(b)
 
 print(add_everything_up(123.456, 'строка'))
